@@ -1,0 +1,45 @@
+Here’s a list of commonly used Maven commands, along with their descriptions:
+
+### 1. **Basic Commands**
+- ** mvn clean **: Deletes the `target` directory, which is where Maven builds the project. It’s a good way to ensure a clean slate.
+  
+- ** mvn compile **: Compiles the source code of the project.
+
+- ** mvn test **: Runs the unit tests of the project.
+
+- ** mvn package **: Packages the compiled code into a distributable format, such as a JAR or WAR file.
+
+- ** mvn install **: Installs the package into the local Maven repository, making it available for other projects on your machine.
+
+- ** mvn deploy **: Copies the final package to the remote repository for sharing with other developers or projects.
+
+### 2. **Project Management**
+- ** mvn archetype:generate **: Creates a new Maven project based on a specified archetype (template).
+
+- ** mvn help:effective-pom **: Displays the effective POM (Project Object Model) for your project, which combines your project settings with inherited settings from parent POMs.
+
+### 3. **Lifecycle Phases**
+Maven operates on a lifecycle that consists of several phases. Here are some important ones:
+- ** validate **: Checks if the project is correct and if all necessary information is available.
+- ** initialize **: Initializes build state, such as creating directories.
+- ** generate-sources **: Generates any source code needed for the build.
+- ** process-sources **: Processes the source code.
+- ** compile **: Compiles the code.
+- ** test **: Tests the compiled code.
+- ** package **: Packages the code into a distributable format.
+- ** verify **: Runs any checks to verify the package is valid.
+- ** install **: Installs the package into the local repository.
+- ** deploy **: Deploys the package to a remote repository.
+
+### 4. **Dependency Management**
+- ** mvn dependency:tree **: Displays the project's dependency tree, showing all dependencies and their transitive dependencies.
+
+- ** mvn dependency:resolve **: Resolves and displays the dependencies of the project.
+
+### 5. **Plugin Management**
+- ** mvn plugin:help **: Displays help information for a specific plugin.
+
+- ** mvn clean install -DskipTests **: Cleans the project, installs the package into the local repository, and skips running tests.
+
+### 6. **Profiles**
+- ** mvn -P profile-name **: Activates a specific Maven profile defined in your POM file. Profiles can customize the build for different environments.
